@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "Index::sort():main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "index_records">
+            </PersistentString>
+            <PersistentString
+               value = "index_records[1]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "compar_asc(void const*, void const*):avail_list.h">
+      </ContextState>
+      <ContextState
+         contextName = "FirstFitAvailList::sort():avail_list.h">
+      </ContextState>
+      <ContextState
+         contextName = "assn_2::FileMgr::open(char const*):file_mgr.h">
+         <PersistentStrings>
+            <PersistentString
+               value = "data_file.tellg()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "compar(void const*, void const*):main.cpp">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
