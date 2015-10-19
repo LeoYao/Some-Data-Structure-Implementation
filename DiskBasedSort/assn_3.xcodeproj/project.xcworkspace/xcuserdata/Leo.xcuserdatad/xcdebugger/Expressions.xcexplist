@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "assn_3::RunFileManager::init_min_run(int):run_file_mgr.h">
+         <PersistentStrings>
+            <PersistentString
+               value = "input_buffer_[1]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "assn_3::RunFileManager::is_run_completed(int, bool):run_file_mgr.h">
+         <PersistentStrings>
+            <PersistentString
+               value = "run_read_count_[run_no]">
+            </PersistentString>
+            <PersistentString
+               value = "run_file_key_count_[run_no]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "assn_3::SmallInputBuffer::is_complete():small_input_buffer.h">
+      </ContextState>
+      <ContextState
+         contextName = "assn_3::RunFileManager::init_run_params():run_file_mgr.h">
+      </ContextState>
+      <ContextState
+         contextName = "main:main.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "&amp;e1">
+            </PersistentString>
+            <PersistentString
+               value = "&amp;e2">
+            </PersistentString>
+            <PersistentString
+               value = "&amp;e3">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "assn_3::Heap::pop():heap.h">
+      </ContextState>
+      <ContextState
+         contextName = "assn_3::OutputBufferManager::write(int):output_buffer_manager.h">
+         <PersistentStrings>
+            <PersistentString
+               value = "output_buffer_[4]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "assn_3::OutputBufferManager::open(char const*):output_buffer_manager.h">
+      </ContextState>
+      <ContextState
+         contextName = "assn_3::MultistepMergeSort::generateSuperRuns():multistep_merge_sort.h">
+         <PersistentStrings>
+            <PersistentString
+               value = "super_run_file_name[0]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "assn_3::RunFileManager::read_file(int, int*, long):run_file_mgr.h">
+      </ContextState>
+      <ContextState
+         contextName = "assn_3::Heap&lt;assn_3::RunElement&gt;::pop():heap.h">
+         <PersistentStrings>
+            <PersistentString
+               value = "&amp;(heap_[0])">
+            </PersistentString>
+            <PersistentString
+               value = "&amp;top">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "assn_3::HeapBufferManager::switchHeap():heap.h">
+      </ContextState>
+      <ContextState
+         contextName = "assn_3::RunFileManager::generateRunsUsingHeap(char const*, char*, int):run_file_mgr.h">
+         <PersistentStrings>
+            <PersistentString
+               value = "real_input_buffer">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "assn_3::RunFileManager::init_buffer():run_file_mgr.h">
+         <PersistentStrings>
+            <PersistentString
+               value = "input_buffer_[5]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "assn_3::OutputBufferManager::writeFile():output_buffer_manager.h">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
