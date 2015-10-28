@@ -42,7 +42,18 @@ int compar_asc(const void* i1, const void* i2)
     int* o1 = (int*) i1;
     int* o2 = (int*) i2;
     
-    return *o1 - *o2;
+    if (*o1 > *o2)
+    {
+        return 1;
+    }
+    else if (*o1 < *o2)
+    {
+        return -1;
+    }
+    else
+    {
+        return 0;
+    }
 }
 
 char* duplicate_chars(const char* chars)
@@ -71,20 +82,5 @@ long getFileSize(const char* file_name)
     return size;
 }
 
-/*
-void writeFile(const char* output_file_name, int* buffer, long buffer_size)
-{
-    ofstream output_file;
-    output_file.open(output_file_name, ios::out|ios::binary|fstream::trunc);
-    if (!(output_file.is_open()))
-    {
-        cerr << "RunFileManager.writeFile: Failed to open file " << output_file_name << "!" << endl;
-        exit(1);
-    }
-    
-    output_file.write((char*)(buffer), sizeof(int) * buffer_size);
-    
-    output_file.close();
-}*/
 
 #endif /* common_h */
