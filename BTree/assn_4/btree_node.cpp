@@ -17,7 +17,6 @@ namespace assn_4 {
         keys_ = new int[order_ - 1];
         children_ = new long[order_];
         key_count_ = 0;
-        child_count_ = 0;
         
         for (int i = 0; i < order_ - 1; i++)
         {
@@ -58,7 +57,6 @@ namespace assn_4 {
     
     void BTreeNode::set_children(long* children, int child_count)
     {
-        child_count_ = child_count;
         for (int i = 0; i < child_count; i++)
         {
             children_[i] = children[i];

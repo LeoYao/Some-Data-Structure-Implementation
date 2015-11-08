@@ -66,6 +66,9 @@ namespace assn_4 {
     {
         if (index_file_.is_open())
         {
+            index_file_.clear();
+            index_file_.seekg(0, fstream::beg);
+            index_file_.write((char*)(&root_offset_), sizeof(long));
             index_file_.close();
         }
     }
@@ -100,6 +103,11 @@ namespace assn_4 {
     
     void BTreeManager::print()
     {
+        if (root_offset_ < 0)
+        {
+            cerr << "Cannot print, because this is an empty index file." << endl;
+            exit(1);
+        }
         Queue queue;
         queue.add(root_offset_);
         
@@ -335,6 +343,11 @@ namespace assn_4 {
     
     BTreeNode* BTreeManager::read_btree_node(long offset)
     {
+        if (offset < 0)
+        {
+            cerr << "BTreeManager.read_btree_node: Invalid offset" << endl;
+            exit(1);
+        }
         index_file_.clear();
         index_file_.seekg(offset, fstream::beg);
         int key_count = 0;
@@ -376,9 +389,9 @@ namespace assn_4 {
     {
         root_offset_ = write(root_offset_, root_);
         
-        index_file_.clear();
-        index_file_.seekg(0, fstream::beg);
-        index_file_.write((char*)(&root_offset_), sizeof(long));
+        //index_file_.clear();
+        //index_file_.seekg(0, fstream::beg);
+        //index_file_.write((char*)(&root_offset_), sizeof(long));
         
         return root_offset_;
     }
@@ -388,7 +401,10 @@ namespace assn_4 {
         index_file_.clear();
         index_file_.seekg(0, fstream::beg);
         index_file_.read((char*)(&root_offset_), sizeof(long));
-        root_ = read_btree_node(root_offset_);
+        if (root_offset_ >= 0)
+        {
+            root_ = read_btree_node(root_offset_);
+        }
     }
 }
 

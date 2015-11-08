@@ -42,7 +42,6 @@ namespace assn_4 {
         int* keys_;
         long* children_;
         int key_count_;
-        int child_count_;
         
     };
 }
