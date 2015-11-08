@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "assn_4::BTreeNode::set_keys(int*, int):btree_node.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "assn_4::BTreeManager::read_root():btree_mgr.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "assn_4::BTreeManager::write_root():btree_mgr.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "assn_4::BTreeManager::search(assn_4::BTreeNode*, long, int, assn_4::BTreeSearchPath*):btree_mgr.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "assn_4::BTreeManager::create_root(int, long, long):btree_mgr.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "assn_4::BTreeManager::print():btree_mgr.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "assn_4::BTreeManager::add_key_to_node(int, assn_4::BTreeNode*, long, int*, assn_4::BTreeNode*):btree_mgr.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "aux_key_arr[3]">
+            </PersistentString>
+            <PersistentString
+               value = "aux_children_arr[0]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "main:main.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "assn_4::BTreeManager::build_aux_arr(int, assn_4::BTreeNode*, long, int*, long*):btree_mgr.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "*(aux_children_arr+3)">
+            </PersistentString>
+            <PersistentString
+               value = "*(aux_key_arr+2)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "assn_4::BTreeManager::add(int):btree_mgr.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "assn_4::BTreeManager::add_key(int, assn_4::BTreeSearchPath*):btree_mgr.cpp">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
