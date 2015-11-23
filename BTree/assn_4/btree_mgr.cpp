@@ -105,8 +105,9 @@ namespace assn_4 {
     {
         if (root_offset_ < 0)
         {
-            cerr << "Cannot print, because this is an empty index file." << endl;
-            exit(1);
+            //cerr << "Cannot print, because this is an empty index file." << endl;
+            //exit(1);
+            return;
         }
         Queue queue;
         queue.add(root_offset_);
@@ -181,8 +182,11 @@ namespace assn_4 {
                 delete latest_node;
             }
             
-            latest_path_node = search_path->get_lastest_path_node();
-            latest_key_to_add = key_to_promote;
+            if (need_to_promote)
+            {
+                latest_path_node = search_path->get_lastest_path_node();
+                latest_key_to_add = key_to_promote;
+            }
         }
     }
     
@@ -321,22 +325,32 @@ namespace assn_4 {
             key_offset++;
         }
         
+        bool result = false;
         if (key_offset < key_count && keys[key_offset] == key)
         {
-            return true;
+            result = true;
         }
-        
-        if (btree_node->is_leaf())
+        else if (btree_node->is_leaf())
         {
-            return false;
+            result = false;
+        }
+        else
+        {
+        
+            long* children = btree_node->get_children();
+            long child_offset_to_search = children[key_offset];
+            
+            BTreeNode* child = read_btree_node(child_offset_to_search);
+            
+            result = search(child, child_offset_to_search, key, search_path);
         }
         
-        long* children = btree_node->get_children();
-        long child_offset_to_search = children[key_offset];
+        if (search_path == __null && btree_node != root_)
+        {
+            delete btree_node;
+        }
         
-        BTreeNode* child = read_btree_node(child_offset_to_search);
-        
-        return search(child, child_offset_to_search, key, search_path);
+        return result;
         
     }
     

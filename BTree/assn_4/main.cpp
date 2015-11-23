@@ -38,6 +38,8 @@ int main(int argc, const char * argv[]) {
         if (cmd->is_end())
         {
             btree_mgr.close();
+            delete cmd;
+            cmd = __null;
             break;
         }
         else if (cmd->is_add())
